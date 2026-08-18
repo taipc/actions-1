@@ -11,3 +11,8 @@ jobs:
         run: ls
       - name: Read file
         run: cat README.md
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Welcome message
+        run: echo "My first GitHub Actions Job"
